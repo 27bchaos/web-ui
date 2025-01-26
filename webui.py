@@ -940,7 +940,7 @@ def create_ui(config, theme_name="Ocean"):
 def main():
     parser = argparse.ArgumentParser(description="Gradio UI for Browser Agent")
     parser.add_argument("--ip", type=str, default="0.0.0.0")
-    parser.add_argument("--port", type=int, default=0, help="Port to listen on")
+    parser.add_argument("--port", type=int, help="Port to listen on")
     parser.add_argument("--theme", type=str, default="Ocean", choices=theme_map.keys(), help="Theme to use for the UI")
     parser.add_argument("--dark-mode", action="store_true", help="Enable dark mode")
     args = parser.parse_args()
