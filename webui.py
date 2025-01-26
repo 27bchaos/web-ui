@@ -948,7 +948,7 @@ def main():
     config_dict = default_config()
 
     demo = create_ui(config_dict, theme_name=args.theme)
-    demo.launch(server_name=args.ip, server_port=args.port)
+    demo.launch(server_name=args.ip, server_port=launch()
 
 if __name__ == '__main__':
     main()
